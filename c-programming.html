@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteBook-C-programming</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .c-language {
+            color: red;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="first-heading">NoteBook</h1>
+        <!-- <h6>Lets make Computer Science easier</h6> -->
+        <nav>
+            <ul>
+                <li><a href="index.html" class="index">Home</a></li>
+                <li><a href="qbasic.html" class="qbasic">Qbasic</a></li>
+                <li><a href="c-programming.html" class="c-language">C-programming</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- main-container -->
+        <div class="main-container">
+
+            <!-- box-1 -->
+            <div class="container-1-qbasic">
+                <p class="p-qbasic-first">
+                    1.WAP to print "Hello World!"
+                </p>
+                <p class="code-1">
+                    <br>
+                    <br>
+                    #include < stdio.h>
+                        <br>
+                        <br>
+                        int main() {
+                        <br>
+                        <br>
+                        printf("Hello, World!");
+                        <br>
+                        <br>
+                        return 0;
+                        <br>
+                        <br>
+                        }
+                </p>
+            </div>
+
+            <!-- box-2 -->
+            <div class="container-1-qbasic">
+                <p class="p-qbasic-first">
+                    2.WAP to enter two numbers and find the sum of the two numbers. </p>
+                <p class="code-1">
+                    <br>
+                    #include < stdio.h>
+                        <br>
+                        int main(){
+                        <br>
+                        int a,b;
+                        <br>
+                        printf("Enter first number");
+                        <br>
+                        scanf("%d",&a);
+                        <br>
+                        printf("Enter second number");
+                        <br>
+                        scanf("%d",&b);
+                        <br>
+                        printf("The sum is %d",a+b);
+                        <br>
+                        return 0;
+                        <br>
+                        }
+                        <br>
+                </p>
+            </div>
+
+            <!-- box-3 -->
+            <div class="container-1-qbasic">
+                <p class="p-qbasic-first">
+                    3.WAP to calcualate the area of the circle when radius is given.
+                </p>
+                <p class="code-1">
+                    <br>
+                    #include < stdio.h>
+                        <br>
+                        int main(){
+                        <br>
+                        int r;
+                        <br>
+                        printf("Enter the radius of the circle");
+                        <br>
+                        scanf("%d",&r);
+                        <br>
+                        printf("The radius is %d",3.14*r*r);
+                        <br>
+                        return 0;
+                        <br>
+                        }
+                </p>
+            </div>
+
+            <!-- box-4 -->
+            <div class="container-1-qbasic">
+                <p class="p-qbasic-first">4.WAP to check whether the input number is even or odd.</p>
+                <p class="code-1">
+                    <br>
+                    #include < stdio.h>
+                        <br>
+                        int main() {
+                        <br>
+                        int num;
+                        <br>
+                        printf("Enter an integer: ");
+                        <br>
+                        scanf("%d", &num);
+                        <br>
+                        <br>
+                        if(num % 2 == 0)
+                        <br>{
+
+                        printf("%d is even.", num);
+                        }
+                        <br>
+                        else
+                        <br>{
+
+                        printf("%d is odd.", num);
+                        }
+                        <br>
+                        return 0;
+                        <br>
+                        }
+                </p>
+            </div>
+
+            <!-- box-5 -->
+            <div class="container-1-qbasic">
+            <p class="p-qbasic-first">5.WAP to check whether the given number is positive negatie or zero.</p>
+            <p class="code-1">
+                <br>
+                #include < stdio.h >
+                <br>
+                int main(){
+                    <br>
+                    int a;
+                    <br>
+                    printf("Enter any integer");
+                    <br>
+                    scanf("%d",&a);
+                    <br>
+                
+                    
+                    if (a>0){
+                        <br>
+                        printf("%d is a positive number",a);
+                        <br>
+                    }
+                    <br>
+                    elseif (a==0){
+                        <br>
+                        printf("%d is a zero.",a);
+                        <br>
+                    }
+                    <br>
+                    else{
+                        <br>
+                        printf("%d is a negative number",a);
+                        <br>
+                    }
+                    <br>
+                    return 0;
+                    <br>
+                }
+                <br>
+            </p>
+            </div>
+
+            <!-- box-6 -->
+            <div class="container-1-qbasic">
+                <p class="p-qbasic-first">
+                    6.WAP to input the sides of triangle and check whether triangle can be formed or not.
+                </p>
+                <p class="code-1">
+                    #include < stdio.h >
+                    <br>
+                    int main(){
+                        <br>
+                        int a,b,c;
+                        <br>
+                        printf("Enter first side of the triangle");
+                        <br>
+                        scanf("%d",&a);
+                        <br>
+                        printf("Enter second side of the triangle");
+                        <br>
+                        scanf("%d",&b);
+                        <br>
+                        printf("Enter second side of the triangle");
+                        <br>
+                        scanf("%d",&c);
+                        <br>
+                        if (a+b>c || b+c>a || a+c>b{
+                            <br>
+                            printf("The triangle can be formed");
+                            <br>
+                        }
+                        <br>
+                        else{
+                            <br>
+                            printf("The triangle cannot be formed");
+                            <br>
+                        }
+                        <br>
+                        return 0;
+                        <br>
+                    }
+                    <br>
+                </p>
+
+            </div>
+               
+            <!-- container-to-add -->
+            <div class="container-to-add-10">
+
+                <!-- box-7 -->
+                <div class="container-1-qbasic" id="container-to-add-5">
+                    <p class="p-qbasic-first">7.WAP to check whether the input number is an armstrong number or not.</p>
+                    <p class="code-1">
+                        <br>
+                        #include < stdio.h >
+                        <br>
+                        int main(){
+                            <br>
+                            int a,r,n,s;
+                            <br>
+                            printf("Enter any number");
+                            <br>
+                            scanf("%d",n);
+                            <br>
+                            a=n;
+                            <br>
+                            
+                            while (n != 0){
+                                <br>
+                                r= n % 10;
+                                <br>
+                                s = s+r*r*r;
+                                <br>
+                                n = n / 10;
+                                <br>
+                            }
+                            <br>
+                            if ( a==s ){
+                                <br>
+                                printf("%d is an armstrong number",a);
+                                <br>
+                            }
+                            <br>
+                            else{
+                                <br>
+                                printf("%d is not an armstrong number",a);
+                                <br>
+                            }
+                            <br>
+                            return 0;
+                            <br>
+                        }
+                        <br>
+                    </p>
+                </div>
+
+                <!-- box-8 -->
+                <div class="container-1-qbasic" id="container-to-add-8">
+                    <p class="p-qbasic-first">8.WAP to check whether entered the number is palindrome number or not.</p>
+                    <p class="code-1">
+                        <br>
+                        #include < stdio.h >
+                        <br>
+                        int main(){
+                            <br>
+                            int a,r,n,s;
+                            <br>
+                            printf("Enter any number");
+                            <br>
+                            scanf("%d",n);
+                            <br>
+                            a=n;
+                            <br>
+                            
+                            while (n != 0){
+                                <br>
+                                r= n % 10;
+                                <br>
+                                s = s*10+r;
+                                <br>
+                                n = n / 10;
+                                <br>
+                            }
+                            <br>
+                            if ( a==s ){
+                                <br>
+                                printf("%d is a palindrome number",a);
+                                <br>
+                            }
+                            <br>
+                            else{
+                                <br>
+                                printf("%d is not a palindrome number",a);
+                                <br>
+                            }
+                            <br>
+                            return 0;
+                            <br>
+                        }
+                        <br>
+                    </p>
+                </div>
+
+                <!-- box-9 -->
+                <div class="container-1-qbasic" id="container-to-add-9">
+
+                    <p class="p-qbasic-first">9.WAP to enter two numbers and find the sum,difference,product,quotient and remainder of the two numbers. </p>
+                    <p class="code-1">
+                        #include < stdio.h >
+                            <br>
+                            int main()
+                            <br>
+                            { 
+                                <br> int firstnumber,secondnumber, add, sub , mul, div, mod;
+                                <br>
+                                printf("Enter first number:\n");
+                                <br>
+                                scanf("%d", &firstnumber);
+                                <br>
+                                printf("Enter second number:\n");
+                                <br>
+                                scanf ("%d", &secondnumber);
+                                <br>
+                                add = firstnumber + secondnumber;
+                                <br>
+                                sub = firstnumber - secondnumber;
+                                <br>
+                                mul = firstnumber * secondnumber;
+                                <br>
+                                div = firstnumber / secondnumber;
+                                <br>
+                                mod = firstnumber % secondnumber;
+                                <br>
+                                printf("The add is %d\n",add);
+                                <br>
+                                printf("The sub is %d\n", sub);
+                                <br>
+                                printf("The mult is %d\n", mul);
+                                <br>
+                                printf("The div is %d\n", div);
+                                <br>
+                                printf("The mod is %d\n", mod);
+                                <br>
+                                return 0;
+                                <br>
+                                
+                            }
+                    </p>
+                </div>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+                
+                
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </main>
+</body>
+
+</html>

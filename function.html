@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .qbasic {
+            color: red;
+        }
+
+        .function {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="first-heading">NoteBook</h1>
+        <!-- <h6>Lets make Computer Science easier</h6> -->
+        <nav>
+            <ul>
+                <li><a href="index.html" class="index">Home</a></li>
+                <li><a href="qbasic.html" class="qbasic"><b> Qbasic</b></a></li>
+                <li><a href="c-programming.html" class="c-language">C-programming</a></li>
+            </ul>
+        </nav>
+        <br>
+        <br>
+        <br>
+
+        <main>
+    </header>
+    <h1 class="h1-qbasic">Solved Problems</h1>
+    <nav class="nav-1">
+        <ul>
+            <li><a href="qbasic.html" class="sub">SUB-procedure</a></li>
+            <li><a href="function.html" class="function"><b>FUNCTION-procedure</b></a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+
+    <!-- main-container -->
+    <div class="main-container">
+
+        <!-- box-1 -->
+        <div class="container-1-qbasic">
+            <p class="p-qbasic-first">1.WAP a program to calculate area of the rectangle.</p>
+            <p class="code-1">
+                <br>
+                DECLARE FUNCTION AREA (L, B)
+                <br>
+                CLS
+                <br>
+                INPUT "ENTER THE LENGTH"; L
+                <br>
+                INPUT "ENTER THE BREADTH"; B
+                <br>
+                PRINT "THE AREA OF THE RECTANGLE IS"; area(L, B)
+                <br>
+                END
+                <br>
+                <br>
+                FUNCTION AREA(L, B)
+                <br>
+                A = L * B
+                <br>
+                AREA = A
+                <br>
+                END FUNCTION
+                <br>
+            </p>
+        </div>
+
+
+        <!-- box-2 -->
+        <div class="container-1-qbasic">
+            <p class="p-qbasic-first">2. WAP TO FIND THE AREA OF THE FOUR WALLS.</p>
+            <p class="code-1">
+                <br>
+                <br>
+                DECLARE FUNCTION AREA(L,B,H)
+                <br>
+                CLS
+                <br>
+                INPUT “ENTER LENGTH” ; L
+                <br>
+                INPUT “ENTER BREADTH” ; B
+                <br>
+                INPUT “ENTER HEIGHT” ; H
+                <br>
+                PRINT “THE AREA OF FOUR WALLS= ” ; AREA(L,B,H)
+                <br>
+                END
+                <br>
+                <br>
+                FUNCTION AREA(L,B,H)
+                <br>
+                AREA=2*H*(L+B)
+                <br>
+                END FUNCTION
+                <br>
+            </p>
+        </div>
+
+        <!-- box-3 -->
+        <div class="container-1-qbasic">
+            <p class="p-qbasic-first">
+                3. WAP to calculate the circumference of a circle.</p>
+            <p class="code-1">
+                <br>
+                DECLARE FUNCTION CIR(A)
+                <br>
+                CLS
+                <br>
+                INPUT “ENTER RADIUS OF A CIRCLE”; R
+                <br>
+                PRINT “CIRCUMFERENCE IS” ; CIR(R)
+                <br>
+                END
+                <br>
+                <br>
+                FUNCTION CIR(A)
+                <br>
+                P=3.14
+                <br>
+                CIR=2*P*A
+                <br>
+                END FUNCTION
+                <br>
+            </p>
+        </div>
+
+        <!-- box-4 -->
+        <div class="container-1-qbasic">
+            <p class="p-qbasic-first">4.WAP to check whether the input number is divisible by 4 and 6 or not.
+            </p>
+            <p class="code-1">
+                <br>
+                DECLARE FUNCTION CHECK$(N)
+                <br>
+                CLS
+                <br>
+                INPUT “ENTER A NUMBER ” ; P
+                <br>
+                PRINT CHECK$(P)
+                <br>
+                END
+                <br>
+                <br>
+                FUNCTION CHECK$(P)
+                <br>
+                IF P MOD 4 =0 AND P MOD 6=0 THEN
+                <br>
+                CHECK$=”DIVISIBLE BY BOTH NUMBERS”
+                <br>
+                ELSE
+                <br>
+                CONV$=”NOT DIVISIBLE BY BOTH NUMBERS”
+                <br>
+                ENDIF
+                <br>
+                END FUNCTION
+                <br>
+            </p>
+        </div>
+
+        <!-- box-5 -->
+        <div class="container-1-qbasic">
+            <p class="p-qbasic-first">
+                5.Write a program to check whether the input number is positive, negative or zero.
+            </p>
+            <p class="code-1">
+                DECLARE FUNCTION CHECK$ (N)
+                <br>
+                CLS
+                <br>
+                INPUT “ENTER ANY NUMBER”; N
+                <br>
+                PRINT N; “IS “; CHECK$(N)
+                <br>
+                END
+                <br>
+                FUNCTION CHECK$ (N)
+                <br>
+                IF N > 0 THEN
+                <br>
+                CHECK$ = “POSITIVE NUMBER”
+                <br>
+                ELSEIF N < 0 THEN <br>
+                    CHECK$ = “NEGATIVE NUMBER”
+                    <br>
+                    ELSE
+                    <br>
+                    CHECK$ = “ZERO”
+                    <br>
+                    END IF
+                    <br>
+                    END FUNCTION
+                    <br>
+            </p>
+        </div>
+
+        <!-- box-6 -->
+        <div class="container-1-qbasic">
+            <p class="p-qbasic-first">
+               6. WAP that accepts three different numbers and returns the smallest one.
+            </p>
+            <p class="code-1">
+                <br>
+                DECLARE FUNCTION SMALL(A,B,C)
+                <br>
+                CLS
+                <br>
+                INPUT “ENTER FIRST NUBER” ; A
+                <br>
+                INPUT “ENTER SECOND NUMBER” ; B
+                <br>
+                INPUT “ENTER THIRD NUMBER” ; C
+                <br>
+                PRINT “THE SMALLEST NUMBER IS” ; SMALL(A,B,C)
+                <br>
+                END
+                <br>
+                FUNCTION SMALL(A,B,C)
+                <br>
+                IF A<B AND B<C THEN
+                <br>
+                SMALL=A
+                <br>
+                ELSE IF B<A AND A<C THEN 
+                <br>
+                SMALL=B
+                <br>
+                ELSE
+                <br>
+                SMALL=C
+                <br>
+                END FUNCTION
+                <br>
+            </p>
+        </div>
+       
+        <!-- box-7 -->
+        <div class="container-to-edit">
+        <div class="container-1-qbasic" id="container-to-edit-1">
+            <p class="p-qbasic-first">
+                7.WAP to check input number is Armstrong or not?
+            </p>
+            <p class="code-1">
+                <br>
+                DECLARE SUB ARM (N)
+                <br>
+                CLS
+                <br>
+                INPUT “ENTER ANY NUMBER”; N
+                <br>
+                CALL ARM (N)
+                <br>
+                END
+                <br>
+                <br>
+                SUB ARM (N)
+                <br>
+                A = N
+                <br>
+                S = 0
+                <br>
+                WHILE N < > 0
+                <br>
+                R = N MOD 10
+                <br>
+                S = S  + R ^ 3
+                <br>
+                N = N \ 10
+                <br>
+                WEND
+                <br>
+                IF A = S THEN
+                <br>
+                PRINT A; “IS ARMSTRONG NUMBER”
+                <br>
+                ELSE
+                <br>
+                PRINT A; “IS NOT ARMSTRONG NUMBER”
+                <br>
+                END IF
+                <br>
+                END SUB
+                <br>
+            </p>
+        </div>
+    <!-- box-8 -->
+    <div class="container-1-qbasic" id="container-to-edit-2">
+         <p class="p-qbasic-first">8.WAP to input a string and count the total numbers of vowels.</p>
+         <p class="code-1">
+             <br>
+             DECLARE FUNCTION COUNT (S$)
+             <br>
+             CLS
+             <br>
+             INPUT “ENTER ANY STRING”; S$
+             <br>
+             PRINT “TOTAL NO. OF VOWELS= “; COUNT(S$)
+             <br>
+             END
+             <br>
+             <br>
+             FUNCTION COUNT (S$)
+             <br>
+             VC = 0
+             <br>
+             FOR I = 1 TO LEN(S$)
+             <br>
+             B$ = MID$(S$, I, 1)
+             <br>
+             C$ = UCASE$(B$)
+             <br>
+             IF C$ = “A” OR C$ = “E” OR C$ = “I” OR C$ = “O” OR C$ = “U” THEN
+             <br>
+             VC = VC + 1
+             <br>
+             END IF
+             <br>
+             NEXT I
+             <br>
+             COUNT = VC
+             <br>
+             END FUNCTION
+             <br>
+            </p>
+        </div>
+
+<!-- box-9 -->
+<div class="container-1-qbasic" id="container-to-edit-3">
+    <p class="p-qbasic-first">9.WAP to input string and display only consonants.</p>
+<p class="code-1">
+    <br>
+    DECLARE FUNCTION DISPC (S$)
+    <br>
+    CLS
+    <br>
+    INPUT “ENTER ANY STRING”; S$
+    <br>
+    CC = DISPC(S$)
+    <br>
+    END
+    <br>
+    <br>
+    FUNCTION DISPC(S$)
+    <br>
+    FOR I = 1 TO LEN(S$)
+    <br>
+    B$ = MID$(S$, I, 1)
+    <br>
+    C$ = UCASE$(B$)
+    <br>
+    IF C$ <> “A” AND C$ <> “E” AND C$ <> “I” AND C$ <> “O”
+    <br>
+    AND C$ <> “U” AND C$ <> ” ” AND C$ <> “.” THEN
+    <br>
+    PRINT B$
+    <br>
+    END IF
+    <br>
+    NEXT I
+    <br>
+    END FUNCTION
+    <br>
+</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteBook-QBasic-SUB</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="responsive/responsive.css">
+    <style>
+        .qbasic {
+            color: red;
+            font-weight: 600;
+        }
+
+        .sub {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="first-heading">NoteBook</h1>
+        <!-- <h6>Lets make Computer Science easier</h6> -->
+        <nav>
+            <ul>
+                <li><a href="index.html" class="index">Home</a></li>
+                <li><a href="qbasic.html" class="qbasic"> <b> Qbasic</a></li>
+                <li><a href="c-programming.html" class="c-language">C-programming</a></li>
+            </ul>
+        </nav>
+        <br>
+        <br>
+        <br>
+
+        <main>
+    </header>
+    <a href="qbasic.html">
+        <h1 class="h1-qbasic">Solved Problems</h1>
+    </a>
+    <nav class="nav-1">
+        <ul>
+            <li><a href="qbasic.html" class="sub"><b>SUB-procedure</b></a></li>
+            <li><a href="function.html" class="function">FUNCTION-procedure</a></li>
+        </ul>
+    </nav>
+    <br>
+
+    <!-- main-container -->
+    <div class="main-container">
+
+        <!-- box-1 -->
+        <div class="container-1-qbasic">
+
+            <p class="p-qbasic-first">1.WAP a program to calculate area of the rectangle.</p>
+            <p class="code-1">
+                <br>
+                DECLARE SUB AREA (L, B)
+                <br>
+                CLS
+                <br>
+                INPUT “ENTER LENGTH”; L
+                <br>
+                INPUT “ENTER BREADTH”; B
+                <br>
+                CALL AREA(L, B)
+                <br>
+                END
+                <br>
+                <br>
+
+                SUB AREA (L, B)
+                <br>
+                A = L * B
+                <br>
+                PRINT “AREA OF RECTANGLE ”; A
+                <br>
+                END SUB
+                <br>
+            </p>
+        </div>
+
+
+        <!-- box-2 -->
+        <div class="container-1-qbasic">
+            <p class="p-qbasic-first">2.WAP to the enter any number and find the square of the given number using SUB
+                procedure</p>
+            <br>
+            <p class="code-1"> DECLARE SUB SQUARE (N)
+                <br>
+                CLS
+                <br>
+                INPUT “ENTER ANY NUMBER”; N
+                <br>
+                CALL SQUARE(N)
+                <br>
+                END
+                <br>
+                <br>
+                SUB SQUARE (N)
+                <br>
+                S = N ^ 2
+                <br>
+                PRINT “SQUARE OF NUMBER “; S
+                <br>
+                END SUB
+            </p>
+            <br>
+        </div>
+
+        <!-- box-3 -->
+        <div class="container-1-qbasic">
+            <p class="p-qbasic-first"> 3.WAP to convert the supplied Nepalese currency into its equivalent Indian
+                currency.</p>
+            <br>
+            <p class="code-1">
+                DECLARE SUB CONV(N)
+                <br>
+                CLS
+                <br>
+                INPUT “ENTER NEPALESE CURRENCY ” ; P
+                <br>
+                CALL CONV(P)
+                <br>
+                END
+                <br>
+                <br>
+                SUB CONV(P)
+                <br>
+                C=P/1.6
+                <br>
+                PRINT “INDIAN CURRENCY “; C
+                <br>
+                END SUB
+                <br>
+            </p>
+        </div>
+
+        <!-- box-4 -->
+        <div class="container-1-qbasic">
+            <p class="p-qbasic-first">
+                4.WAP to check whether an input number is even or odd.
+            </p>
+            <p class="code-1">
+                <br>
+                DECLARE SUB CONV(P)
+                <br>
+                CLS
+                <br>
+                INPUT “ENTER A NUMBER ” ; P
+                <br>
+                CALL CONV(P)
+                <br>
+                END
+                <br>
+                <br>
+                SUB CONV(P)
+                <br>
+                IF P MOD 2 = 0 THEN
+                <br>
+                PRINT “EVEN NUMBER”
+                <br>
+                ELSE
+                <br>
+                PRINT “ODD NUMBER”
+                <br>
+                ENDIF
+                <br>
+                END SUB
+                <br>
+            </p>
+        </div>
+
+        <!-- box-5 -->
+        <div class="container-1-qbasic">
+            <p class="p-qbasic-first">5.WAP to calculate the square of all digits of the input number.
+            </p>
+            <p class="code-1">
+                <br>
+                DECLARE SUB SQU(A)
+                <br>
+                CLS
+                <br>
+                INPUT “ENTER A NUMBER” ; N
+                <br>
+                CALL SQU(N)
+                <br>
+                END
+                <br>
+                SUB SQU(N)
+                <br>
+                WHILE N<>0
+                    <br>
+                    R=N MOD 10
+                    <br>
+                    S=R^2
+                    <br>
+                    PRINT S
+                    <br>
+                    N=N\10
+                    <br>
+                    WEND
+                    <br>
+                    END SUB
+                    <br>
+            </p>
+        </div>
+
+        <!-- box-6 -->
+        <div class="container-1-qbasic">
+            <p class="p-qbasic-first">
+                6.WAP to convert the temperature given in the centigrade to Fahrenheit. (9C +160/5)
+            </p>
+            <p class="code-1">
+                <br>
+                DECLARE SUB CONVERT (C)
+                <br>
+                CLS
+                <br>
+                INPUT “ENTER TEMPERATURE IN CELSIUS”; C
+                <br>
+                CALL CONVERT (C)
+                <br>
+                END
+                <br>
+                <br>
+                SUB CONVERT (C)
+                <br>
+                F = C * (9 / 5) + 160
+                <br>
+                PRINT “TEMPERATURE IN FARENHEIT=”; F
+                <br>
+                END SUB
+                <br>
+            </p>
+        </div>
+
+        <!-- box-7 -->
+        <div class="container-1-qbasic">
+            <p class="p-qbasic-first">
+                7.WAP to check whether the entered number is prime or composite.
+            </p>
+            <p class="code-1">
+                <br>
+                DECLARE SUB PRIME (N)
+                <br>
+                INPUT “ENTER ANY NUMBER”; N
+                <br>
+                CALL PRIME (N)
+                <br>
+                END
+                <br>
+                <br>
+                
+                SUB PRIME (N)
+                <br>
+                C = 0
+                <br>
+                FOR I = 1 TO N
+                <br>
+                IF N MOD I = 0 THEN C = C + 1
+                <br>
+                NEXT I
+                <br>
+                IF C = 2 THEN
+                <br>
+                PRINT N; “IS PRIME NUMBER”
+                <br>
+                ELSE
+                <br>
+                PRINT N; “IS COMPOSITE NUMBER”
+                <br>
+                END IF
+                <br>
+                END SUB
+                <br>
+                </p>
+        </div>
+
+        <!-- box-8 -->
+        <div class="container-1-qbasic">
+            <p class="p-qbasic-first"> 8.WAP to display the reverse of the input string.</p>
+             <p class="code-1">
+                 <br>
+                 DECLARE SUB REV(N$)
+                 <br>
+                 CLS
+                 <br>
+                 INPUT “ENTER A WORD” ; W$
+                 <br>
+                 CALL REV(W$)
+                 <br>
+                 END
+                 <br>
+                 <br>
+                 SUB REV(N$)
+                 <br>
+                 FOR I = LEN(N$) TO 1 STEP-1
+                 <br>
+                 C$=C$+MID$(N$,I,1)
+                 <br>
+                 NEXT I
+                 <br>
+                 PRINT “REVERSED STRING” ; C$
+                 <br>
+                 END SUB
+                 <br>
+            </p>
+        </div>
+
+        <!-- box-9 -->
+        <div class="container-1-qbasic">
+            <p class="p-qbasic-first">9.WAP to print the string in the alternate capital. </p>
+        <p class="code-1">
+            <br>
+            DECLARE SUB ALTERNATE (A$)
+            <br>
+            INPUT “ENTER STRING”; A$
+            <br>
+            END
+            <br>
+            <br>
+            SUB ALTERNATE (A$)
+            <br>
+            FOR I= 1 TO LEN (A$)
+            <br>
+            B$= MID (A$, I, 1)
+            <br>
+            IF I MOD 2 = 0 THEN
+            <br>
+            B$= LCASE$ (B$)
+            <br>
+            ELSE
+            <br>
+            B$ = UCASE (B$)
+            <br>
+            END IF
+            <br>
+            ALT$ = ALT$ +B$
+            <br>
+            NEXT I “THE REQUIRED ALTERNATE IS” ;ALT$
+            <br>
+            END SUB
+            <br>
+        </p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    </main>
+</body>
+
+</html>
